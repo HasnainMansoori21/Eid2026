@@ -1,20 +1,10 @@
-<script>
-  atOptions = {
-    'key' : '5c746cb8a6fea61554b0a61eaca13955',
-    'format' : 'iframe',
-    'height' : 250,
-    'width' : 300,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/5c746cb8a6fea61554b0a61eaca13955/invoke.js"></script>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eid Mubarak 2026 Special</title>
+    <!-- Premium Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     
     <style>
@@ -110,27 +100,15 @@
             font-weight: bold; width: 100%;
             box-shadow: 0 5px 20px rgba(0,0,0,0.4);
         }
-
-        #musicBtn {
-            position: fixed; bottom: 20px; right: 20px;
-            background: rgba(207, 157, 56, 0.8); border: none;
-            color: white; padding: 12px; border-radius: 50%;
-            cursor: pointer; z-index: 100; font-size: 20px;
-        }
     </style>
 </head>
-<body onclick="playAudio()">
+<body>
 
-    <audio id="myAudio" loop>
-        <source src="https://www.bensound.com/bensound-music/bensound-india.mp3" type="audio/mpeg">
-    </audio>
-
-    <button id="musicBtn">🎵</button>
     <div class="falling-container" id="stars"></div>
 
     <div class="container">
 
-        <!-- TOP AD -->
+        <!-- TOP AD (300x250) -->
         <div class="ad-container">
             <script type="text/javascript">
                 atOptions = {
@@ -147,6 +125,7 @@
         <div class="from-name" id="displayName">Hasnain</div>
         <h1 class="main-wish">Eid Mubarak</h1>
 
+        <!-- Local GIF File -->
         <img src="eid.gif" alt="Eid Mubarak" class="eid-gif">
 
         <div class="message-box">
@@ -161,7 +140,7 @@
             <button class="share-btn" onclick="shareToWhatsApp()">📲 WhatsApp Par Bhejein</button>
         </div>
 
-        <!-- BOTTOM AD -->
+        <!-- BOTTOM AD (300x250) -->
         <div class="ad-container">
             <script type="text/javascript">
                 atOptions = {
@@ -179,6 +158,7 @@
     </div>
 
     <script>
+        // Star animation logic
         function createStars() {
             const container = document.getElementById('stars');
             const symbols = ['⭐', '🌙', '✨'];
@@ -194,38 +174,28 @@
         }
         createStars();
 
-        function playAudio() {
-            document.getElementById("myAudio").play();
-        }
-
+        // Get name from URL
         const urlParams = new URLSearchParams(window.location.search);
         const senderName = urlParams.get('n');
         if (senderName) {
             document.getElementById('displayName').innerText = senderName + " ki taraf se";
         }
 
+        // WhatsApp Share logic
         function shareToWhatsApp() {
             var name = document.getElementById("nameInput").value;
             if (name == "") {
                 alert("Pehle apna naam likhein!");
                 return;
             }
+            
             var currentUrl = window.location.href.split('?')[0];
             var shareUrl = currentUrl + "?n=" + encodeURIComponent(name);
+            
             var message = "🌙 *" + name + "* ki taraf se aapko *Eid Mubarak* ho aur aapki sabhi duaein qubool hon, Ameen! ✨\n\nPura message padhne ke liye niche click karein...\n👇👇👇\n" + shareUrl;
+            
             window.location.href = "whatsapp://send?text=" + encodeURIComponent(message);
         }
     </script>
 </body>
 </html>
-
-<script>
-  atOptions = {
-    'key' : '5c746cb8a6fea61554b0a61eaca13955',
-    'format' : 'iframe',
-    'height' : 250,
-    'width' : 300,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/5c746cb8a6fea61554b0a61eaca13955/invoke.js"></script>
