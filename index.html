@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eid Mubarak 2026</title>
-    <!-- Fonts optimize (Sirf wahi load honge jo zaroori hain) -->
+    <title>Eid Mubarak 2026 Special</title>
+    <!-- Optimized Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@600&display=swap" rel="stylesheet">
     
     <style>
@@ -13,14 +13,24 @@
             background: radial-gradient(circle, #004d40, #00251a);
             color: white; font-family: 'Poppins', sans-serif;
             text-align: center; overflow-x: hidden;
+            min-height: 100vh;
         }
 
+        /* Responsive Ad Container for 468x60 */
         .ad-slot {
-            margin: 10px auto;
-            min-height: 250px;
-            width: 300px;
-            background: rgba(255,255,255,0.05); /* Loading indicator */
-            display: flex; align-items: center; justify-content: center;
+            margin: 15px auto;
+            max-width: 468px; /* Ad ki original width */
+            width: 95%;      /* Mobile par screen ke hisaab se */
+            min-height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Isse Ad mobile screen ke bahar nahi jayegi */
+        .ad-slot iframe {
+            max-width: 100% !important;
         }
 
         .falling-container {
@@ -42,13 +52,14 @@
         }
 
         .from-name { 
-            font-size: 24px; color: #ffeb3b; margin-top: 10px; 
-            text-shadow: 2px 2px 8px #000;
+            font-size: 26px; color: #ffeb3b; margin-top: 10px; 
+            text-transform: uppercase; font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
         }
 
         .main-wish { 
             font-family: 'Great Vibes', cursive;
-            font-size: 60px; margin: 10px 0;
+            font-size: 65px; margin: 15px 0;
             background: linear-gradient(to bottom, #cf9d38, #ffefbb, #cf9d38);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -61,35 +72,39 @@
         }
 
         .eid-gif { 
-            width: 100%; border-radius: 15px; 
-            border: 4px ridge #cf9d38;
+            width: 100%; border-radius: 20px; 
+            border: 5px ridge #cf9d38;
+            box-shadow: 0 0 30px rgba(207, 157, 56, 0.5);
             margin: 10px 0;
-            display: block;
         }
 
         .message-box {
-            font-size: 17px; background: rgba(0,0,0,0.4); 
-            padding: 15px; border-radius: 10px; 
-            border-top: 3px solid #cf9d38; margin-bottom: 15px;
+            font-size: 18px; line-height: 1.6; color: #f0f0f0;
+            background: rgba(0,0,0,0.4); padding: 20px;
+            border-radius: 15px; border-top: 3px solid #cf9d38;
+            margin-bottom: 20px;
         }
 
         .input-section { 
             background: rgba(255, 255, 255, 0.1); 
-            padding: 20px; border-radius: 15px;
-            border: 1px solid rgba(207, 157, 56, 0.3);
+            padding: 25px; border-radius: 20px;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(207, 157, 56, 0.4);
         }
 
         input[type="text"] { 
-            width: 80%; padding: 12px; border-radius: 25px; 
-            border: 2px solid #cf9d38; margin-bottom: 15px; 
-            text-align: center; background: #000; color: #fff;
+            width: 85%; padding: 15px; border-radius: 30px; 
+            border: 2px solid #cf9d38; font-size: 16px; 
+            margin-bottom: 20px; text-align: center;
+            background: rgba(0,0,0,0.6); color: white;
         }
 
         .share-btn {
             background: linear-gradient(45deg, #cf9d38, #ffefbb);
-            color: #00251a; border: none; padding: 12px 25px; 
-            font-size: 18px; border-radius: 50px; cursor: pointer;
+            color: #00251a; border: none; padding: 15px 30px; 
+            font-size: 20px; border-radius: 50px; cursor: pointer;
             font-weight: bold; width: 100%;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.4);
         }
     </style>
 </head>
@@ -99,19 +114,26 @@
 
     <div class="container">
 
-        <!-- TOP AD -->
+        <!-- TOP AD (468x60) -->
         <div class="ad-slot">
             <script type="text/javascript">
-                atOptions = { 'key' : '5c746cb8a6fea61554b0a61eaca13955', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };
+                atOptions = {
+                    'key' : 'f57270f387f6ed15f0f693812bf5fbef',
+                    'format' : 'iframe',
+                    'height' : 60,
+                    'width' : 468,
+                    'params' : {}
+                };
             </script>
-            <script type="text/javascript" src="//www.highperformanceformat.com/5c746cb8a6fea61554b0a61eaca13955/invoke.js"></script>
+            <script type="text/javascript" src="https://www.highperformanceformat.com/f57270f387f6ed15f0f693812bf5fbef/invoke.js"></script>
         </div>
 
         <div class="from-name" id="displayName">Hasnain</div>
+        
         <h1 class="main-wish">Eid Mubarak</h1>
 
-        <!-- GIF (Lazy load added for speed) -->
-        <img src="eid.gif" alt="Eid Mubarak" class="eid-gif" loading="lazy">
+        <!-- GIF FILE -->
+        <img src="eid.gif" alt="Eid Mubarak" class="eid-gif">
 
         <div class="message-box">
             🌙 Allah aapko dheron khushiyan, <br>
@@ -120,29 +142,34 @@
         </div>
 
         <div class="input-section">
-            <p style="margin-top:0; font-size:14px;">Apna Naam likhein aur doston ko bhejein 👇</p>
-            <input type="text" id="nameInput" placeholder="Yahan Naam Likhein...">
+            <p style="margin-top:0; font-size: 14px;">Apna Naam likhein aur doston ko bhejein 👇</p>
+            <input type="text" id="nameInput" placeholder="Yahan Apna Naam Likhein...">
             <button class="share-btn" onclick="shareToWhatsApp()">📲 WhatsApp Par Bhejein</button>
         </div>
 
-        <!-- BOTTOM AD -->
+        <!-- BOTTOM AD (468x60) -->
         <div class="ad-slot">
-            <!-- Tip: Niche wale ad ke liye dusri Key use karein agar ye show na ho -->
             <script type="text/javascript">
-                atOptions = { 'key' : '5c746cb8a6fea61554b0a61eaca13955', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };
+                atOptions = {
+                    'key' : 'f57270f387f6ed15f0f693812bf5fbef',
+                    'format' : 'iframe',
+                    'height' : 60,
+                    'width' : 468,
+                    'params' : {}
+                };
             </script>
-            <script type="text/javascript" src="//www.highperformanceformat.com/5c746cb8a6fea61554b0a61eaca13955/invoke.js"></script>
+            <script type="text/javascript" src="https://www.highperformanceformat.com/f57270f387f6ed15f0f693812bf5fbef/invoke.js"></script>
         </div>
 
-        <p style="font-size: 10px; margin-top: 20px; opacity: 0.5;">✨ Design by Hasnain Mansoori ✨</p>
+        <p style="font-size: 11px; margin-top: 25px; opacity: 0.5;">✨ Design by Hasnain Mansoori ✨</p>
     </div>
 
     <script>
-        // Efficient Star animation (Kam elements = Zyada speed)
+        // Star animation
         function createStars() {
             const container = document.getElementById('stars');
             const symbols = ['⭐', '🌙', '✨'];
-            for (let i = 0; i < 20; i++) {
+            for (let i = 0; i < 25; i++) {
                 const star = document.createElement('div');
                 star.className = 'star';
                 star.innerText = symbols[Math.floor(Math.random() * symbols.length)];
@@ -152,15 +179,22 @@
                 container.appendChild(star);
             }
         }
-        window.onload = createStars;
+        createStars();
 
+        // Get name from URL
         const urlParams = new URLSearchParams(window.location.search);
         const senderName = urlParams.get('n');
-        if (senderName) { document.getElementById('displayName').innerText = senderName + " ki taraf se"; }
+        if (senderName) {
+            document.getElementById('displayName').innerText = senderName + " ki taraf se";
+        }
 
+        // WhatsApp Share logic
         function shareToWhatsApp() {
             var name = document.getElementById("nameInput").value;
-            if (name == "") { alert("Pehle apna naam likhein!"); return; }
+            if (name == "") {
+                alert("Pehle apna naam likhein!");
+                return;
+            }
             var currentUrl = window.location.href.split('?')[0];
             var shareUrl = currentUrl + "?n=" + encodeURIComponent(name);
             var message = "🌙 *" + name + "* ki taraf se aapko *Eid Mubarak* ho aur aapki sabhi duaein qubool hon, Ameen! ✨\n\nPura message padhne ke liye niche click karein...\n👇👇👇\n" + shareUrl;
